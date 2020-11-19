@@ -1,7 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Рабешко](https://up.htmlacademy.ru/adaptive/21/user/1595779).
-
 * Наставник: Юлия 🔥 Антонова.
 
 ---
