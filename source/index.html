@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo-link">
+      <img class="page-header__logo-img" src="https://via.placeholder.com/75x22" alt="Логотип PINK" width="75"
+        height="22">
+    </a>
+
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">Главная страница</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
+            Academy</a></li>
+      </ul>
+      <button class="mein-nav__toggle" type="button">Меню</button>
+    </nav>
+  </header>
+
+  <main class="main-page">
+    <h1 class="vissualy-hidden">PINK</h1>
+
+    <section class="app">
+      <h2 class="app__header">Взгляни на жизнь иначе!</h2>
+      <div class="app__downloads">
+        <a class="app__downloads btn" href="#">Скачать приложение</a>
+
+        <ul class="list__app">
+          <li class="app-item"><a class="link__app link__app--apple" href="#">Скачать на APPLE</a></li>
+          <li class="app-item"><a class="link__app link__app--android" href="#">Скачать на ANDROID</a></li>
+          <li class="app-item"><a class="link__app link__app--windows" href="#">Скачать на WINDOWS</a></li>
+        </ul>
+
+        <p class="text__app">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="profit">
+      <div class="profit__title">
+        <h2 class="profit__header">Устали от серости мегаполиса?</h2>
+        <p class="profit__text">Нам есть, что вам предложить!</p>
+      </div>
+
+      <ul class="profit__list">
+        <li class="profit__item">
+          <h3 clsas="profit__subheader">Поднимает настроение</h3>
+          <p class="profit__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="profit__item">
+          <h3 class="profit__subheader">Меняет мир вокруг</h3>
+          <p class="profit__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="profit__item">
+          <h3 class="profit__subheader">Заводит новых друзей</h3>
+          <p class="profit__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+          <img src="https://via.placeholder.com/157x320" alt="Изображение приложения" width="157" height="320">
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2 class="vissualy-hidden">Отзывы покупателей о приложении PINK</h2>
+
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <h3 class="reviews__user">Николай Петров</h3>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+      </ul>
+
+      <div class="reviews__pagination pagination">
+        <span class="pagination__item pagination__item--current"></span>
+        <span class="pagination__item"></span>
+        <span class="pagination__item"></span>
+      </div>
+    </section>
+
+    <section class="price">
+      <h2 class="vissualy-hidden">Тарифы</h2>
+
+      <table class="price__table">
+        <tr class="price__table-header">
+          <td class="vissualy-hidden">Опции</td>
+          <th class="price__header">
+            <div class="price__title">База</div>
+            <span class="price__cost">1,99 USD</span>
+          </th>
+          <th class="price__header price__header--hit">
+            <div class="price__title">Стандарт</div>
+            <span class="price__cost">3,00 USD</span>
+          </th>
+          <th class="price__header">
+            <div class="price__title">Анлим</div>
+            <span class="price__cost">9,99 USD</span>
+          </th>
+        </tr>
+        <tr class="price__table-row">
+          <td class="price__feature">Розовый фильтр</td>
+          <td class="price__availability price__availability--on">Есть</td>
+          <td class="price__availability price__availability--on">Есть</td>
+          <td class="price__availability price__availability--on">Есть</td>
+        </tr>
+        <tr class="price__table-row">
+          <td class="price__feature">Cмайлик</td>
+          <td class="price__availability price__availability--on">Нет</td>
+          <td class="price__availability price__availability--on">Есть</td>
+          <td class="price__availability price__availability--on">Есть</td>
+        </tr>
+        <tr class="price__table-row">
+          <td class="price__feature">Комментарии</td>
+          <td class="price__availability price__availability--on">Нет</td>
+          <td class="price__availability price__availability--on">Нет</td>
+          <td class="price__availability price__availability--on">Есть</td>
+        </tr>
+      </table>
+
+      <div class="price_paginations paginations">
+        <span class="pagination__item"></span>
+        <span class="pagination__item pagination__item--current"></span>
+        <span class="pagination__item"></span>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div>
+        <h2 class="contacts__header">Остались вопросы?</h2>
+        <p class="contacts__text">Свяжитесь с нами!</p>
+      </div>
+
+      <div class="contacts__form">
+        <div class="contacts__item">
+          <h3 class="contacts__title">Звоните:</h3>
+          <a class="contacts__type" href="tel:=78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <h3 class="contacts__title">Пишите:</h3>
+          <a class="contacts__type" href="mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <h3 class="contacts__title">Приезжайте в гости:</h3>
+          <address class="contacts__type">ул. Большая Конюшенная, 19/8</address>
+        </div>
+      </div>
+
+      <div class="contacts__map">
+        <img class="contacts__map-img" src="https://via.placeholder.com/320x645" alt="ул. Большая Конюшенная, 19/8"
+          width="320" height="645">
+      </div>
+    </section>
+  </main>
+
+</body>
+
 </html>
