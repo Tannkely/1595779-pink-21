@@ -26,13 +26,16 @@
 
     <h1 class="vissualy-hidden">PINK</h1>
 
+    <section class="caption">
+      <h2 class="caption__header">Взгляни на жизнь иначе!</h2>
+    </section>
+
     <section class="app">
-      <h2 class="app__header">Взгляни на жизнь иначе!</h2>
       <div class="app__downloads">
         <a class="app__downloads btn" href="#">Скачать приложение</a>
 
         <ul class="app__list">
-          <li class="app__list-item"><a class="app__link app_link--apple" href="#">Скачать на APPLE</a></li>
+          <li class="app__list-item"><a class="app__link app__link--apple" href="#">Скачать на APPLE</a></li>
           <li class="app__list-item"><a class="app__link app__link--android" href="#">Скачать на ANDROID</a></li>
           <li class="app__list-item"><a class="app__link app__link--windows" href="#">Скачать на WINDOWS</a></li>
         </ul>
@@ -40,6 +43,11 @@
         <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
+
+
+  </header>
+
+  <main class="main-page">
 
     <section class="profit">
       <div class="profit__title">
@@ -62,14 +70,9 @@
           <p class="profit__subheader">Заводит новых друзей</p>
           <p class="profit__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
-          <img src="https://via.placeholder.com/157x320" alt="Изображение приложения">
         </li>
       </ul>
     </section>
-
-  </header>
-
-  <main class="main-page">
 
     <section class="reviews">
       <h2 class="vissualy-hidden">Отзывы покупателей о приложении PINK</h2>
@@ -92,9 +95,9 @@
     <section class="price">
       <h2 class="vissualy-hidden">Тарифы</h2>
 
-      <table class="price__table">
+      <thead class="price__table">
         <tr class="price__table-header">
-          <td class="vissualy-hidden">Опции</td>
+          <th class="price__header-none"></th>
           <th class="price__header">
             <div class="price__title">База</div>
             <span class="price__cost">1,99 USD</span>
@@ -108,6 +111,9 @@
             <span class="price__cost">9,99 USD</span>
           </th>
         </tr>
+      </thead>
+
+      <tbody class="price__table-body">
         <tr class="price__table-row">
           <td class="price__feature">Розовый фильтр</td>
           <td class="price__item">
@@ -153,12 +159,12 @@
             <span class="price__availability price__availability--on">Есть</span>
           </td>
         </tr>
-      </table>
+      </tbody>
 
-      <div class="price_pagination pagination">
-        <a class="pagination__item" href="#">Тариф База</a>
-        <a class="pagination__item pagination__item--current" href="#">Тариф Стандарт</a>
-        <a class="pagination__item" href="#">Тариф Анлим</a>
+      <div class="price__pagination pagination">
+        <span class="pagination__item">Тариф База</span>
+        <span class="pagination__item pagination__item--current">Тариф Стандарт</span>
+        <span class="pagination__item">Тариф Анлим</span>
       </div>
     </section>
 
@@ -187,35 +193,32 @@
       <div class="contacts__map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CGhaEHyM"
           title="Наш адрес ул. Большая Конюшенная, 19/8"></iframe>
-        <div class="contacts__maps">
-          <div class="contacts__marker"></div>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <a href="index.html" class="page-footer__logo-link">
-      <img scr="https://via.placeholder.com/147x40" alt="Логотип PINK" class="page-footer__logo-img" width="147"
+      <img src="https://via.placeholder.com/147x40" alt="Логотип PINK" class="page-footer__logo-img" width="147"
         height="40">
     </a>
 
     <div class="social">
       <a href="#" class="social__link">
-        <img class="social__icon social__icon--twitter" scr="https://via.placeholder.com/46x46" alt="">
+        <img class="social__icon social__icon--twitter" src="https://via.placeholder.com/46x46" alt="">
       </a>
       <a href="#" class="social__link">
-        <img class="social__icon social__icon--facebook" scr="https://via.placeholder.com/46x46" alt="">
+        <img class="social__icon social__icon--facebook" src="https://via.placeholder.com/46x46" alt="">
       </a>
       <a href="#" class="social__link">
-        <img class="social__icon social__icon--youtube" scr="https://via.placeholder.com/46x46" alt="">
+        <img class="social__icon social__icon--youtube" src="https://via.placeholder.com/46x46" alt="">
       </a>
     </div>
 
     <div class="copyright">
       <p class="copyright__text">Разработанно</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
-        <img scr="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="copyright__img" width="27"
+        <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="copyright__img" width="27"
           height="34">
       </a>
     </div>
