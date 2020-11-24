@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link" href="index.html">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-img" src="https://via.placeholder.com/75x22" alt="Логотип PINK" width="75"
         height="22">
     </a>
@@ -21,11 +21,18 @@
         <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
             Academy</a></li>
       </ul>
-      <button class="mein-nav__toggle" type="button">Меню</button>
+      <button class="main-nav__toggle" type="button">Меню</button>
     </nav>
 
+    <div class="intro intro--form">
+      <div class="intro__inner">
+        <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </div>
+
+  </header>
+
   <main class="page-main">
-    <h1 class="page-main__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <p class="page-main__offer">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту!
       <span class="page-main__invite-fill">Пожалуйста, заполните форму ниже:</span>
@@ -53,7 +60,6 @@
         </ul>
 
       </fieldset>
-    </header>
 
       <fieldset class="form-composition__fieldset form-composition__fieldset--progress">
         <legend class="form-composition__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -91,7 +97,7 @@
           </li>
           <li class="form-composition__progress-item">
             <label class="form-composition__label">
-              <input class="form-composition__input-check" type="checkbox" id="progress-1" name="progress-1">Разгромил
+              <input class="form-composition__input-check" type="checkbox" id="progress-6" name="progress-6">Разгромил
               отель
             </label>
           </li>
@@ -190,13 +196,13 @@
   <div class="modal-window modal-window--error">
     <h2 class="modal-window__header">Что-то пошло не так!</h2>
     <p class="modal-window__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal-window__btn" type="button">ok</a>
+    <button class="modal-window__btn" type="button">ok</button>
   </div>
 
-  <div class="modal-window modal-ups--success">
+  <div class="modal-window modal-window--success">
     <h2 class="modal-window__header">Ваша заявка отправлена</h2>
     <p class="modal-window__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    <a class="modal-window__btn" href="#">Закрыть окно</a>
+    <button class="modal-window__btn" type="button">Закрыть окно</button>
   </div>
 
 </body>
