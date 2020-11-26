@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link" href="index.html">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-img" src="https://via.placeholder.com/75x22" alt="Логотип PINK" width="75"
         height="22">
     </a>
@@ -21,15 +21,19 @@
         <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
             Academy</a></li>
       </ul>
-      <button class="mein-nav__toggle" type="button">Меню</button>
+      <button class="main-nav__toggle" type="button">Меню</button>
     </nav>
+
+    <section class="intro">
+      <h2 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </section>
+
   </header>
 
-  <main class="main-page">
-    <h1 class="main-page__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <p class="main-page__offer">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+  <main class="page-main">
+    <p class="page-main__offer">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
       бонусную карту!
-      <span class="main-page__invite-fill">Пожалуйста, заполните форму ниже:</span>
+      <span class="page-main__invite-fill">Пожалуйста, заполните форму ниже:</span>
     </p>
     <form class="form-composition" action="https://echo.htmlacademy.ru" method="GET">
       <fieldset class="form-composition__fieldset form-composition__fieldset--user">
@@ -37,22 +41,19 @@
 
         <ul class="form-composition__user-list">
           <li class="form-composition__user-item">
-            <label class="form-composition__label">Фамилия:
+            <label class="form-composition__label" for="user-surname">Фамилия:</label>
               <input class="form-composition__input-text" type="text" id="user-surname" name="user-surname" required
                 placeholder="Укажите фамилию *">
-            </label>
           </li>
           <li class="form-composition__user-item">
-            <label class="form-composition__label">Имя:
+            <label class="form-composition__label" for="user-name">Имя:</label>
               <input class="form-composition__input-text" type="text" id="user-name" name="user-name" required
                 placeholder="Введите ваше имя *">
-            </label>
           </li>
           <li class="form-composition__user-item">
-            <label class="form-composition__label">Отчество:
+            <label class="form-composition__label" for="user-patronymic">Отчество:</label>
               <input class="form-composition__input-text" type="text" id="user-patronymic" name="user-patronymic"
                 required placeholder="Ну и отчество тоже">
-            </label>
           </li>
         </ul>
 
@@ -94,7 +95,7 @@
           </li>
           <li class="form-composition__progress-item">
             <label class="form-composition__label">
-              <input class="form-composition__input-check" type="checkbox" id="progress-1" name="progress-1">Разгромил
+              <input class="form-composition__input-check" type="checkbox" id="progress-6" name="progress-6">Разгромил
               отель
             </label>
           </li>
@@ -114,14 +115,14 @@
           <li class="form-composition__contacts-item">
             <label class="form-composition__label">Адрес почты
               <input class="form-composition__input-text" type="text" id="contacts-email" name="contacts-email"
-                placeholder="Введите почту *">
+                placeholder="Введите почту *" required>
             </label>
           </li>
         </ul>
 
       </fieldset>
 
-      <fieldset class="form-composition__fieldset form-composition__fieldset-app">
+      <fieldset class="form-composition__fieldset form-composition__fieldset--app">
         <legend class="form-composition__legend">С каким приложением путешествовали?</legend>
 
         <ul class="form-composition__app-list">
@@ -165,41 +166,41 @@
 
   <footer class="page-footer">
     <a href="index.html" class="page-footer__logo-link">
-      <img scr="https://via.placeholder.com/147x40" alt="Логотип PINK" class="page-footer__logo-img" width="147"
+      <img src="https://via.placeholder.com/147x40" alt="Логотип PINK" class="page-footer__logo-img" width="147"
         height="40">
     </a>
 
     <div class="social">
       <a href="#" class="social__link">
-        <img class="social__icon social__icon--twitter" scr="https://via.placeholder.com/46x46" alt="">
+        <img class="social__icon social__icon--twitter" src="https://via.placeholder.com/46x46" alt="">
       </a>
       <a href="#" class="social__link">
-        <img class="social__icon social__icon--facebook" scr="https://via.placeholder.com/46x46" alt="">
+        <img class="social__icon social__icon--facebook" src="https://via.placeholder.com/46x46" alt="">
       </a>
       <a href="#" class="social__link">
-        <img class="social__icon social__icon--youtube" scr="https://via.placeholder.com/46x46" alt="">
+        <img class="social__icon social__icon--youtube" src="https://via.placeholder.com/46x46" alt="">
       </a>
     </div>
 
     <div class="copyright">
       <p class="copyright__text">Разработанно</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
-        <img scr="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="copyright__img" width="27"
+        <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="copyright__img" width="27"
           height="34">
       </a>
     </div>
   </footer>
 
-  <div class="modal-ups modal-ups--error">
-    <h2 class="modal-ups__header">Что-то пошло не так!</h2>
-    <p class="modal-ups__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <a class="modal-ups__btn" href="#">ok</a>
+  <div class="modal-window modal-window--error">
+    <h2 class="modal-window__header">Что-то пошло не так!</h2>
+    <p class="modal-window__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal-window__btn" type="button">ok</button>
   </div>
 
-  <div class="modal-ups modal-ups--success">
-    <h2 class="modal-ups__header">Ваша заявка отправлена</h2>
-    <p class="modal-ups__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    <a class="modal-ups__btn" href="#">Закрыть окно</a>
+  <div class="modal-window modal-window--success">
+    <h2 class="modal-window__header">Ваша заявка отправлена</h2>
+    <p class="modal-window__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <button class="modal-window__btn" type="button">Закрыть окно</button>
   </div>
 
 </body>
