@@ -36,10 +36,13 @@
         ваших?</p>
     </div>
 
-    <div class="page-main__wrapper">
+    <div class="main-page__wrapper">
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Анна</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img--panorama" src="https://via.placeholder.com/320x137" alt="Панорама с высокого моста" width="320" height="137">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Анна<span class="article__time">5 минут назад</span></b>
@@ -55,6 +58,9 @@
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Левон</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img" src="https://via.placeholder.com/280x180" alt="Фотоаппарат на штативе, напротив машины" width="280" height="180">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Левон<span class="article__time">5 часов назад</span></b>
@@ -69,6 +75,9 @@
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Антон</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img" src="https://via.placeholder.com/280x180" alt="Барабанная установка" width="280" height="180">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Антон<span class="article__time">12 часов назад</span></b>
@@ -83,6 +92,9 @@
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Борис</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img" src="https://via.placeholder.com/280x180" alt="Облака за стеклянным потолком" width="280" height="180">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Борис<span class="article__time">20 часов назад</span></b>
@@ -97,6 +109,9 @@
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Сергей</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img" src="https://via.placeholder.com/280x180" alt="Ярмарка под шатром" width="280" height="180">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Сергей<span class="article__time">25 часов назад</span></b>
@@ -111,6 +126,9 @@
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Максим</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img" src="https://via.placeholder.com/280x180" alt="Пейзаж на фоне ног в сандалях" width="280" height="180">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Максим<span class="article__time">40 часов назад</span></b>
@@ -125,6 +143,9 @@
 
       <article class="article">
         <h2 class="visually-hidden">Автор фотографии Надежда</h2>
+        <a href="#" class="article__link">
+          <img class="article__img article__img" src="https://via.placeholder.com/280x180" alt="Крыло самолета в небе" width="280" height="180">
+        </a>
         <div class="article__post">
           <div class="article__title">
             <b class="article__author">Надежда<span class="article__time">5 минут назад</span></b>
@@ -146,7 +167,7 @@
         <p class="upload-photo__text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
 
-      <form class="upload-form" action="https://echo.htmlacademy.ru" method="form">
+      <form class="upload-form" action="https://echo.htmlacademy.ru" method="GET">
 
         <div class="upload-form__image">
           <input type="file" class="upload-form__file" id="file-field" aria-label="Загрузить изображение">
@@ -156,7 +177,7 @@
         <div class="upload-form__tools">
           <div class="upload-form__tools">
             <div class="upload-form__tool upload-form__tool--crop upload-form__tool--current">
-              <label class="upload-form__label-tool">Обрезка</label>
+              <button class="upload-form__label-tool" type="button">Обрезка</button>
 
               <div class="upload-form__control">
                 <div class="upload-form__range">
@@ -167,7 +188,7 @@
             </div>
 
             <div class="upload-form__tool upload-form__tool--fill">
-              <label class="upload-form__label-tool">Заливка</label>
+              <button class="upload-form__label-tool" type="button">Заливка</button>
 
               <div class="upload-form__control">
                 <div class="upload-form__range">
@@ -178,7 +199,7 @@
             </div>
 
             <div class="upload-form__tool upload-form__tool--contrast">
-              <label class="upload-form__label-tool">Контраст</label>
+              <button class="upload-form__label-tool" type="button">Контраст</button>
               <div class="upload-form__control">
                 <div class="upload-form__range">
                   <div class="upload-form__scale"></div>
