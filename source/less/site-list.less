@@ -1,0 +1,23 @@
+.site-list__item {
+  background: @color-basic;
+  border-top: 1px solid @box-shadow;
+  border-bottom: 1px solid @color-black;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+.site-list__item--active a {
+  position: relative;
+}
+
+.site-list__item a[href] {
+  padding: 15px 0;
+
+  &:hover {
+    color: @color-hit;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
