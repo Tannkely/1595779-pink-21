@@ -1,0 +1,212 @@
+.form-composition {
+  display: grid;
+  grid-auto-rows: auto;
+}
+
+.form-composition__fieldset-user {
+  border: none;
+  margin: 0;
+  padding: 0 20px 43px;
+}
+
+.form-composition__submit {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: @color-green-button;
+  color: @color-white;
+  text-transform: uppercase;
+  border: 2px solid @color-green-button;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.form-composition fieldset {
+  border: none;
+  margin: 0 auto;
+  padding: 0 20px 43 px;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.form-checkbox {
+  margin: 0;
+  padding-top: 39px;
+  padding-bottom: 21px;
+}
+
+.form-composition__fieldset--contacts {
+  margin: 0;
+  padding: 32px 20px 27px;
+}
+
+.form-radio {
+  padding-top: 37px;
+  padding-bottom: 24px;
+}
+
+.form-composition__control {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.form-composition__fieldset-wrapper {
+  background-color: @color-grey;
+}
+
+.form-radio,
+.form-checkbox,
+.form-composition__fieldset--contacts,
+.form-composition__fieldset-wrapper {
+  border: none;
+}
+
+.form-composition input::-webkit-input-placeholder {
+  color: @color-basic;
+  padding-left: 20px;
+}
+
+.form-composition__user-item {
+  list-style: none;
+}
+
+.form-composition__user-item label {
+  padding-left: 23px;
+  color: @color-hit;
+}
+
+.form-composition__input-text {
+  min-height: 59px;
+  width: 98%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @color-button-disabled;
+  border-radius: 3px;
+  padding-left: 23px;
+}
+
+.form-composition__user {
+  padding: 0 20px;
+}
+
+.form-composition__progress-item:last-child {
+  padding-bottom: 55px;
+}
+
+.form-composition__progress-item:first-child {
+  padding-top: 55px;
+}
+
+.form-composition__progress-list,
+.form-composition__app-list,
+.form-composition__legend {
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.form-composition__fieldset--app,
+.form-composition__fieldset--progress {
+  background-color: @color-grey;
+  margin-top: 30px;
+}
+
+.form-composition__app-item {
+  padding-top: 38px;
+}
+
+.form-composition__app-item:first-child {
+  padding-top: 52px;
+}
+
+.form-composition__fieldset--contacts {
+  padding: 0 20px;
+}
+
+.form-composition__contacts-list,
+.form-composition__user-list {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.form-composition__fieldset-wrapper {
+  background-color: @color-grey;
+}
+
+.form-composition__fieldset-checkbox {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.form-composition__progress-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-composition__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @color-hit;
+  text-transform: uppercase;
+}
+
+.form-composition__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-basic
+}
+
+.form-composition__legend {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-hit;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.form-composition__name,
+.form-composition__label {
+  cursor: pointer;
+}
+
+.form-composition__input-text {
+  font-family: inherit;
+  min-height: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @color-button-disabled;
+  border-radius: 3px;
+  padding-left: 20px;
+  color: @color-black-green;
+  flex-grow: 1;
+
+  &::placeholder {
+    color: @color-basic;
+  }
+
+}
+
+.fform-composition__fieldset-message {
+  margin-bottom: 14px;
+}
+
+.form-composition__textarea {
+  font-family: inherit;
+  resize: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @color-button-disabled;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: @color-black-green;
+  }
+}

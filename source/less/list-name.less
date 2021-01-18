@@ -1,0 +1,28 @@
+.list-name {
+  margin: 0;
+  padding: 0;
+}
+
+.list-name__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 19px;
+}
+
+.list-name__label {
+  align-self: flex-start;
+  margin-bottom: 3px;
+  padding-left: 23px;
+  text-transform: uppercase;
+}
+
+.list-name__input {
+  &:hover {
+    border-color: @color-basic;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: @color-hit;
+  }
+}
