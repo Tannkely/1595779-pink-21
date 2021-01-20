@@ -10,43 +10,28 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--no-js page-inner">
-    <div class="page-header__menu page-header__menu--closed">
-      <nav class="page-header__nav">
-        <div class="page-header__logo-button">
-          <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта">
-            <svg class="page-header__logo-mobile" width="74" height="23">
-              <use xlink:href="#page-header__logo-mobile"></use>
-            </svg>
-            <svg class="page-header__logo-tablet" width="145" height="40">
-              <use xlink:href="#page-header__logo-tablet"></use>
-            </svg>
-            <svg class="page-header__logo-desktop" width="147" height="40">
-              <use xlink:href="#page-header__logo-desktop"></use>
-            </svg>
-          </a>
-          <a href="#" class="page-header__toggle" aria-label="Открыть/закрыть меню">
-            <svg class="page-header__close" width="23" height="23">
-              <use xlink:href="#page-header__close"></use>
-            </svg>
-            <svg class="page-header__open" width="50" height="24">
-              <use xlink:href="#page-header__open"></use>
-            </svg>
-          </a>
-        </div>
+  <header class="page-header">
+    <div class="page-header__menu">
+      <div class="page-header__top-line page-header__top-line--over">
+        <a class="page-header__logo" aria-label="Переход на главную страницу сайта">
+          <img class="page-header__logo-img" src="img/pink.svg" alt="Логотип PINK" width="75" height="22">
+        </a>
+      </div>
 
+      <nav class="page-header__nav main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="main-nav__link" href="index.html"
+          <button class="main-nav__toggle" type="button"><span class="vissualy-hidden">Меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html"
                 aria-label="Перейти на главную страницу">Главная страница</a>
             </li>
-            <li class="site-list__item"><a class="main-nav__link" href="photo.html"
-                aria-label="Перейти на страницу с Фотографиями">Фотографии</a></li>
-            <li class="site-list__item main-nav__item--current"><a class="main-nav__link" href="#"
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html"
+                aria-label="Перейти на страницу с фотографиями">Фотографии</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__item--current" href="#"
                 aria-label="Перейти на страницу с конкурсом">Конкурс</a></li>
-            <li class="site__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"
-                aria-label="Перейти на страницу HTML Academy">HTML
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"
+                aria-label="Прейти на страницу HTML Academy">HTML
                 Academy</a></li>
           </ul>
         </div>

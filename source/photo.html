@@ -10,43 +10,28 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--no-js page-inner">
-    <div class="page-header__menu page-header__menu--closed">
-      <nav class="page-header__nav">
-        <div class="page-header__logo-button">
-          <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта">
-            <svg class="page-header__logo-mobile" width="74" height="23">
-              <use xlink:href="#page-header__logo-mobile"></use>
-            </svg>
-            <svg class="page-header__logo-tablet" width="145" height="40">
-              <use xlink:href="#page-header__logo-tablet"></use>
-            </svg>
-            <svg class="page-header__logo-desktop" width="147" height="40">
-              <use xlink:href="#page-header__logo-desktop"></use>
-            </svg>
-          </a>
-          <a href="#" class="page-header__toggle" aria-label="Открыть/закрыть меню">
-            <svg class="page-header__close" width="23" height="23">
-              <use xlink:href="#page-header__close"></use>
-            </svg>
-            <svg class="page-header__open" width="50" height="24">
-              <use xlink:href="#page-header__open"></use>
-            </svg>
-          </a>
-        </div>
+  <header class="page-header">
+    <div class="page-header__menu">
+      <div class="page-header__top-line page-header__top-line--over">
+        <a class="page-header__logo" aria-label="Переход на главную страницу сайта">
+          <img class="page-header__logo-img" src="img/pink.svg" alt="Логотип PINK" width="75" height="22">
+        </a>
+      </div>
 
+      <nav class="page-header__nav main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="main-nav__link" href="index.html"
+          <button class="main-nav__toggle" type="button"><span class="vissualy-hidden">Меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html"
                 aria-label="Перейти на главную страницу">Главная страница</a>
             </li>
-            <li class="site-list__item main-nav__item--current"><a class="main-nav__link" href="#"
-                aria-label="Перейти на страницу с конкурсом">Фотографии</a></li>
-            <li class="site-list__item"><a class="main-nav__link" href="form.html"
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#"
+                aria-label="Перейти на страницу с фотографиями">Фотографии</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html"
                 aria-label="Перейти на страницу с конкурсом">Конкурс</a></li>
-            <li class="site__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"
-                aria-label="Перейти на страницу HTML Academy">HTML
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive"
+                aria-label="Прейти на страницу HTML Academy">HTML
                 Academy</a></li>
           </ul>
         </div>
@@ -65,17 +50,19 @@
 
   <main class="main-photos">
     <section class="photos">
-      <h1 class="visually-hidden">Посты пользователей</h1>
+      <h2 class="visually-hidden">Посты пользователей</h2>
       <p class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!<br>&nbsp;Видите, как не
         хватает ваших?</p>
       <figure class="photos__catalog">
         <a href="#" aria-label="Увеличить фотографию">
           <picture>
-            <source type="image/webp" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
-            <source srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img class="photos__full" width="320" height="137" src="/img/panorama-mobile.jpg"
               srcset="/img/panorama-mobile@2x.jpg 2x" alt="Вид на гору с подвесного моста">
           </picture>
@@ -98,46 +85,51 @@
             <span class="photos__enumerator">Нравится: 215</span>
           </div>
         </figcaption>
-        <ul class="photos__list">
-          <li class="photos__item">
-            <figure>
-              <a href="#" aria-label="Увеличить фотографию">
-                <picture>
-                  <source type="image/webp" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-1-tablet.webp 1x, img/photos/photo-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photos/photo-1-mobile@2x.webp 2x">
-                  <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                  <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img class="photos__img" width="280" height="180" src="img/photo-1-mobile.jpg"
-                    srcset="img/photo-1-mobile@2x.jpg 2x" alt="Снимок автомобиля">
-                </picture>
-              </a>
-              <figcaption class="photos__wrapper">
-                <blockquote class="photos__descriptions">
-                  <cite class="photos__user">Левон</cite>
-                  <time class="photos__time" datetime="2020-11-17T18:18">(5 часов назад)</time>
-                  <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                </blockquote>
-                <div class="photos__likes">
-                  <a class="photos__button" href="#" aria-label="Kнопка нравится">
-                    <svg width="13" height="12">
-                      <use xlink:href="#photos__button-like"></use>
-                    </svg>
-                  </a>
-                  <span class="photos__enumerator">Нравится: 356</span>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
+      </figure>
+      <ul class="photos__list">
+        <li class="photos__item">
+          <figure>
+            <a href="#" aria-label="Увеличить фотографию">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-1-tablet.webp 1x, img/photos/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photos/photo-1-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="photos__img" width="280" height="180" src="img/photo-1-mobile.jpg"
+                  srcset="img/photo-1-mobile@2x.jpg 2x" alt="Снимок автомобиля">
+              </picture>
+            </a>
+            <figcaption class="photos__wrapper">
+              <blockquote class="photos__descriptions">
+                <cite class="photos__user">Левон</cite>
+                <time class="photos__time" datetime="2020-11-17T18:18">(5 часов назад)</time>
+                <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              </blockquote>
+              <div class="photos__likes">
+                <a class="photos__button" href="#" aria-label="Kнопка нравится">
+                  <svg width="13" height="12">
+                    <use xlink:href="#photos__button-like"></use>
+                  </svg>
+                </a>
+                <span class="photos__enumerator">Нравится: 356</span>
+              </div>
+            </figcaption>
+        </figure>
+      </li>
           <li class="photos__item">
             <figure>
               <a href="#" aria-label="увеличить фотографию">
                 <picture>
-                  <source type="image/webp" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
-                  <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                  <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                   <img class="photos__img" width="280" height="180" src="img/photo-2-mobile.jpg"
                     srcset="img/photo-2-mobile@2x.jpg 2x" alt="Ударные инструменты">
                 </picture>
@@ -158,16 +150,17 @@
                 </div>
               </figcaption>
             </figure>
-          </li>
           <li class="photos__item">
             <figure>
               <a href="#" aria-label="Увеличить фотографию">
                 <picture>
-                  <source type="image/webp" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
-                  <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                  <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                   <img class="photos__img" width="280" height="180" src="img/photo-3-mobile.jpg"
                     srcset="img/photo-3-mobile@2x.jpg 2x" alt="Зеркальные окна">
                 </picture>
@@ -193,12 +186,15 @@
             <figure>
               <a href="#" aria-label="Увеличить фотографию">
                 <picture>
-                  <source type="image/webp" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
-                  <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-                  <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                  <img class="photos__img" width="280" height="180" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Сельскохозяйственный рынок на Кубани">
+                  <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="photos__img" width="280" height="180" src="img/photo-4-mobile.jpg"
+                    srcset="img/photo-4-mobile@2x.jpg 2x" alt="Сельскохозяйственный рынок на Кубани">
                 </picture>
               </a>
               <figcaption class="photos__wrapper">
@@ -218,66 +214,72 @@
               </figcaption>
             </figure>
           </li>
-              <li class="photos__item">
-            <figure>
-              <a href="#" aria-label="Увеличить фотографию">
-                <picture>
-                  <source type="image/webp" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
-                  <source srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-                  <source srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-                  <img class="photos__img" width="280" height="180" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Человек свесил ноги с горы">
-                </picture>
-              </a>
-              <figcaption class="photos__wrapper">
-                <blockquote class="photos__descriptions">
-                  <cite class="photos__user">Максим</cite>
-                  <time class="photos__time" datetime="2020-11-17T18:18">(40 Часов назад)</time>
-                  <p class="photos__text">Где снег-то?</p>
-                </blockquote>
-                <div class="photos__likes">
-                  <a class="photos__button" href="#" aria-label="Kнопка нравится">
-                    <svg width="13" height="12">
-                      <use xlink:href="#photos__button-like"></use>
-                    </svg>
-                  </a>
-                  <span class="photos__enumerator">Нравится: 150</span>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photos__item">
-            <figure>
-              <a href="#" aria-label="Увеличить фотографию">
-                <picture>
-                  <source type="image/webp" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
-                  <source srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-                  <source srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-                  <img class="photos__img" width="280" height="180" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета">
-                </picture>
-              </a>
-              <figcaption class="photos__wrapper">
-                <blockquote class="photos__descriptions">
-                  <cite class="photos__user">Надежда</cite>
-                  <time class="photos__time" datetime="2020-11-17T18:18">(45 часов назад)</time>
-                  <p class="photos__text">Всем GM и взаимные лайки!</p>
-                </blockquote>
-                <div class="photos__likes">
-                  <a class="photos__button" href="#" aria-label="Kнопка нравится">
-                    <svg width="13" height="12">
-                      <use xlink:href="#photos__button-like"></use>
-                    </svg>
-                  </a>
-                  <span class="photos__enumerator">Нравится: 2560</span>
-                </div>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
+        <li class="photos__item">
+          <figure>
+            <a href="#" aria-label="Увеличить фотографию">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img class="photos__img" width="280" height="180" src="img/photo-5-mobile.jpg"
+                  srcset="img/photo-5-mobile@2x.jpg 2x" alt="Человек свесил ноги с горы">
+              </picture>
+            </a>
+            <figcaption class="photos__wrapper">
+              <blockquote class="photos__descriptions">
+                <cite class="photos__user">Максим</cite>
+                <time class="photos__time" datetime="2020-11-17T18:18">(40 Часов назад)</time>
+                <p class="photos__text">Где снег-то?</p>
+              </blockquote>
+              <div class="photos__likes">
+                <a class="photos__button" href="#" aria-label="Kнопка нравится">
+                  <svg width="13" height="12">
+                    <use xlink:href="#photos__button-like"></use>
+                  </svg>
+                </a>
+                <span class="photos__enumerator">Нравится: 150</span>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photos__item">
+          <figure>
+            <a href="#" aria-label="Увеличить фотографию">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img class="photos__img" width="280" height="180" src="img/photo-6-mobile.jpg"
+                  srcset="img/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета">
+              </picture>
+            </a>
+            <figcaption class="photos__wrapper">
+              <blockquote class="photos__descriptions">
+                <cite class="photos__user">Надежда</cite>
+                <time class="photos__time" datetime="2020-11-17T18:18">(45 часов назад)</time>
+                <p class="photos__text">Всем GM и взаимные лайки!</p>
+              </blockquote>
+              <div class="photos__likes">
+                <a class="photos__button" href="#" aria-label="Kнопка нравится">
+                  <svg width="13" height="12">
+                    <use xlink:href="#photos__button-like"></use>
+                  </svg>
+                </a>
+                <span class="photos__enumerator">Нравится: 2560</span>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
     <section class="upload-photo">
       <h2 class="visually-hidden">Редактор поста</h2>
@@ -289,89 +291,120 @@
 
       <form class="upload-photo__form" action="https://echo.htmlacademy.ru" method="POST">
         <picture>
-          <source type="image/webp" srcset="img/editor-tablet-desktop.webp 1x, img/editor-tablet-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/editor-tablet-desktop.webp 1x, img/editor-tablet-desktop@2x.webp 2x">
           <source type="image/webp" srcset="img/editor-mobile.webp 1x, img/editor-mobile@2x.webp 2x">
-          <source srcset="img/editor-tablet-desktop.jpg 1x, img/editor-tablet-desktop@2x.jpg 2x">
-          <img class="upload-photo__img" width="280" height="374" src="img/editor-mobile.jpg" srcset="img/editor-mobile@2x.jpg 2x" alt="Снимок для редактирования">
+          <source media="(min-width: 660px)"
+            srcset="img/editor-tablet-desktop.jpg 1x, img/editor-tablet-desktop@2x.jpg 2x">
+          <img class="upload-photo__img" width="280" height="374" src="img/editor-mobile.jpg"
+            srcset="img/editor-mobile@2x.jpg 2x" alt="Снимок для редактирования">
         </picture>
 
         <fieldset class="upload-photo__fieldset">
           <legend class="visually-hidden">Фильтры снимка</legend>
 
 
-        <ul class="upload-photo__list">
-              <li class="upload-photo__item">
-                <a class="upload-photo__link editor__link--on" href="#" aria-label="Изменить размер">
-                  <svg class="upload-photo__svg editor__svg-crop" width="44" height="44" viewBox="0 0 44 44">
-                    <use xlink:href="#uploadphoto__svg-crop"></use>
-                  </svg>
-                </a>
-                <label class="upload-photo__range-crop">
-                  <span class="visually-hidden">Изменить размер</span>
-                  <input class="upload-photo__range" type="range" min="1" max="100" value="78" name="filter">
-                </label>
-              </li>
-              <li class="upload-photo__item">
-                <a class="upload-photo__link upload-photo__link--off" href="#" aria-label="Изменить фон">
-                  <svg class="upload-photo__svg upload-photo__svg-fill" width="48" height="43" viewBox="0 0 48 43">
-                    <use xlink:href="#upload-photo__svg-fill"></use>
-                  </svg>
-                </a>
-                <label class="upload-photo__range-fill">
-                  <span class="visually-hidden">Изменить фон</span>
-                  <input class="upload-photo__range" type="range" min="1" max="100" value="14" name="filter">
-                </label>
-              </li>
-              <li class="upload-photo__item">
-                <a class="upload-photo__link upload-photo__link--off" href="#" aria-label="Изменить яркость">
-                  <svg class="upload-photo__svg upload-photo__svg-contrast" width="32" height="32" viewBox="0 0 32 32">
-                    <use xlink:href="#upload-photo__svg-contrast"></use>
-                  </svg>
-                </a>
-                <label class="upload-photo__range-contrast">
-                  <span class="visually-hidden">Изменить яркость</span>
-                  <input class="upload-photo__range" type="range" min="1" max="100" value="51" name="filter">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="upload-photo__buttons">
-            <button class="upload-photo__post button-photo" type="submit">Запостить</button>
-            <button class="upload-photo__cancel button-photo" type="reset">Отмена</button>
-          </div>
-        </form>
-      </section>
-    </main>
+          <ul class="upload-photo__editor-list site-list">
+            <li class="upload-photo__editor-item upload-photo__crop">
+              <input class="visually-hidden upload-photo__editor-crop" type="radio" name="group" value="crop"
+                id="upload-photo__editor-crop" checked>
+              <label class="" for="upload-photo__editor-crop"></label>
+              <!--  <div class="upload-photo__controls">
+                <div class="upload-photo__scale">
+                  <div class="upload-photo__bar"></div>
+                </div>
+                  <div class="upload-photo__toggle"></div>
+              </div>-->
+            </li>
+            <li class="upload-photo__editor-item upload-photo__crop-range">
+              <div class="upload-photo__range-controls">
+                <div class="upload-photo__scale">
+                  <!--<div class="bar"></div>-->
+                </div>
+                <div class="upload-photo__toggle upload-photo__toggle-crop" tabindex="0"></div>
+                <!--круглый бегунок-->
+              </div>
+            </li>
+            <li class="upload-photo__editor-item upload-photo__fill">
+              <input class="visually-hidden upload-photo__editor-fill" type="radio" name="group" value="fill"
+                id="upload-photo__editor-fill">
+              <label class="" for="upload-photo__editor-fill"></label>
+              <!--<div class="upload-photo__controls">
+                <div class="upload-photo__scale">
+                  <div class="upload-photo__bar"></div>
+                </div>
+                  <div class="upload-photo__toggle"></div>
+              </div>-->
+            </li>
+            <li class="upload-photo__editor-item upload-photo__fill-range">
+              <div class="upload-photo__range-controls">
+                <div class="upload-photo__scale">
+                  <!-- <div class="bar"></div>-->
+                </div>
+                <div class="upload-photo__toggle upload-photo__toggle-fill" tabindex="0"></div>
+                <div class="upload-photo__line"></div>
+              </div>
+            </li>
+            <li class="upload-photo__editor-item upload-photo__contrast">
+              <input class="visually-hidden upload-photo__editor-contrast" type="radio" name="group" value="contrast"
+                id="upload-photo__editor-contrast">
+              <label class="" for="upload-photo__editor-contrast"></label>
+              <!--<div class="upload-photo__controls">
+                <div class="upload-photo__scale">
+                  <div class="upload-photo__bar"></div>
+                </div>
+                  <div class="upload-photo__toggle"></div>
+              </div>-->
+            </li>
+            <li class="upload-photo__editor-item upload-photo__contrast-range">
+              <div class="upload-photo__range-controls">
+                <div class="upload-photo__scale">
+                  <!-- <div class="bar"></div>-->
+                </div>
+                <div class="upload-photo__toggle upload-photo__toggle-contrast" tabindex="0"></div>
 
-    <footer class="page-footer">
-      <a href="index.html" class="page-footer__logo-link">
-        <img src="img/logotype-blue-tablet.svg" alt="Логотип PINK" class="page-footer__logo-img" width="145" height="40">
+                <div class="upload-photo__line"></div>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="upload-photo__buttons">
+          <button class="upload-photo__post button-photo" type="submit">Запостить</button>
+          <button class="upload-photo__cancel button-photo" type="reset">Отмена</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a href="index.html" class="page-footer__logo-link">
+      <img src="img/logotype-blue-tablet.svg" alt="Логотип PINK" class="page-footer__logo-img" width="145" height="40">
+    </a>
+
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru"
+            aria-label="Перейти на нашу страницу в twitter">Мы в Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/"
+            aria-label="Перейти на нашу страницу в facebook">Мы в Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/"
+            aria-label="Перейти на нашу страницу в youtube">Мы в YouTube</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p class="copyright__text">Разработанно</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <img src="img/html_academy.svg" alt="Логотип HTML Academy" class="copyright__img" width="27" height="34">
       </a>
-
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru"
-              aria-label="Перейти на нашу страницу в twitter">Мы в Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/"
-              aria-label="Перейти на нашу страницу в facebook">Мы в Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/"
-              aria-label="Перейти на нашу страницу в youtube">Мы в YouTube</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="copyright">
-        <p class="copyright__text">Разработанно</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="img/html_academy.svg" alt="Логотип HTML Academy" class="copyright__img" width="27" height="34">
-        </a>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
 </body>
 
