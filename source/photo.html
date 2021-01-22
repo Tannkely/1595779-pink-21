@@ -300,74 +300,35 @@
             srcset="img/editor-mobile@2x.jpg 2x" alt="Снимок для редактирования">
         </picture>
 
-        <fieldset class="upload-photo__fieldset">
-          <legend class="visually-hidden">Фильтры снимка</legend>
-
-
-          <ul class="upload-photo__editor-list site-list">
-            <li class="upload-photo__editor-item upload-photo__crop">
-              <input class="visually-hidden upload-photo__editor-crop" type="radio" name="group" value="crop"
-                id="upload-photo__editor-crop" checked>
-              <label class="" for="upload-photo__editor-crop"></label>
-              <!--  <div class="upload-photo__controls">
-                <div class="upload-photo__scale">
-                  <div class="upload-photo__bar"></div>
-                </div>
-                  <div class="upload-photo__toggle"></div>
-              </div>-->
+        <fieldset class="upload-photo__box">
+          <ul class="upload-photo__list list-reset">
+            <li class="upload-photo__item">
+              <input class="upload-photo__input-range input-range" type="range" id="filter-crop">
+              <label class="upload-photo__label-range label-range" for="filter-crop">
+                <svg class="upload-photo__crop" width="44" height="44">
+                  <use xlink:href="#crop"></use>
+                </svg>
+              </label>
             </li>
-            <li class="upload-photo__editor-item upload-photo__crop-range">
-              <div class="upload-photo__range-controls">
-                <div class="upload-photo__scale">
-                  <!--<div class="bar"></div>-->
-                </div>
-                <div class="upload-photo__toggle upload-photo__toggle-crop" tabindex="0"></div>
-                <!--круглый бегунок-->
-              </div>
+            <li class="upload-photo__item">
+              <input class="upload-photo__input-range input-range" type="range" id="filter-fill">
+              <label class="upload-photo__label-range label-range" for="filter-fill">
+                <svg class="upload-photo__fill" width="48" height="43">
+                  <use xlink:href="#fill"></use>
+                </svg>
+              </label>
             </li>
-            <li class="upload-photo__editor-item upload-photo__fill">
-              <input class="visually-hidden upload-photo__editor-fill" type="radio" name="group" value="fill"
-                id="upload-photo__editor-fill">
-              <label class="" for="upload-photo__editor-fill"></label>
-              <!--<div class="upload-photo__controls">
-                <div class="upload-photo__scale">
-                  <div class="upload-photo__bar"></div>
-                </div>
-                  <div class="upload-photo__toggle"></div>
-              </div>-->
-            </li>
-            <li class="upload-photo__editor-item upload-photo__fill-range">
-              <div class="upload-photo__range-controls">
-                <div class="upload-photo__scale">
-                  <!-- <div class="bar"></div>-->
-                </div>
-                <div class="upload-photo__toggle upload-photo__toggle-fill" tabindex="0"></div>
-                <div class="upload-photo__line"></div>
-              </div>
-            </li>
-            <li class="upload-photo__editor-item upload-photo__contrast">
-              <input class="visually-hidden upload-photo__editor-contrast" type="radio" name="group" value="contrast"
-                id="upload-photo__editor-contrast">
-              <label class="" for="upload-photo__editor-contrast"></label>
-              <!--<div class="upload-photo__controls">
-                <div class="upload-photo__scale">
-                  <div class="upload-photo__bar"></div>
-                </div>
-                  <div class="upload-photo__toggle"></div>
-              </div>-->
-            </li>
-            <li class="upload-photo__editor-item upload-photo__contrast-range">
-              <div class="upload-photo__range-controls">
-                <div class="upload-photo__scale">
-                  <!-- <div class="bar"></div>-->
-                </div>
-                <div class="upload-photo__toggle upload-photo__toggle-contrast" tabindex="0"></div>
-
-                <div class="upload-photo__line"></div>
-              </div>
+            <li class="upload-photo__item">
+              <input class="upload-photo__input-range input-range" type="range" id="filter-contrast">
+              <label class="upload-photo__label-range label-range" for="filter-contrast">
+                <svg class="upload-photo__contrast" width="32" height="32">
+                  <use xlink:href="#contrast"></use>
+                </svg>
+              </label>
             </li>
           </ul>
         </fieldset>
+
         <div class="upload-photo__buttons">
           <button class="upload-photo__post button-photo" type="submit">Запостить</button>
           <button class="upload-photo__cancel button-photo" type="reset">Отмена</button>

@@ -1,0 +1,77 @@
+.input-range {
+  appearance: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 14px;
+  background-color: @color-grey;
+  outline: none;
+  cursor: pointer;
+}
+
+.input-range::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 6px;
+  background-color: @color-black-green;
+}
+
+.input-range::-moz-range-track {
+  background-color: @color-grey;
+}
+
+.input-range::-webkit-slider-thumb {
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid @color-hit;
+  border-radius: 50%;
+  background-color: @color-white;
+}
+
+.input-range::-moz-range-thumb {
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid @color-hit;
+  border-radius: 50%;
+  background-color: @color-white;
+  transition-property: background-color;
+}
+
+.input-range:focus::-webkit-slider-thumb,
+.input-range:active::-webkit-slider-thumb {
+  background-color: @color-hit;
+}
+
+.input-range:focus::-moz-range-thumb,
+.input-range:active::-moz-range-thumb {
+  background-color: @color-hit;
+}
+
+.label-range {
+  display: block;
+  cursor: pointer;
+}
+
+.input-range:focus ~ .label-range svg {
+  fill: @color-hit;
+}
+
+.label-range:hover svg {
+  fill: fade(@color-black-green, 50%);
+}
+
+.label-range:active svg {
+  fill: @color-hit;
+}
+
+.label-file {
+  cursor: pointer;
+}
