@@ -24,7 +24,7 @@
 .form-composition fieldset {
   border: none;
   margin: 0 auto;
-  padding: 0 20px 43 px;
+  padding: 0 20px 43px;
   width: 100%;
   max-width: 320px;
   box-sizing: border-box;
@@ -146,7 +146,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: @color-basic
+  color: @color-basic;
 }
 
 .form-composition__legend {
@@ -199,3 +199,32 @@
     color: @color-black-green;
   }
 }
+
+.form-composition__checkbox {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  margin-left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @color-button-disabled;
+  border-radius: 1px;
+  background-color: @color-white;
+  outline: none;
+
+  &:hover {
+    border-color: @color-black-green;
+  }
+
+  &:active {
+    border-color: @color-hit;
+  }
+}
+
+.form-composition__input-text:checked + .form__checkbox {
+  background-image: url("../img/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
