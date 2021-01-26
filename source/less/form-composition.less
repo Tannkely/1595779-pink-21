@@ -36,7 +36,7 @@
   padding-bottom: 21px;
 }
 
-.form-composition__fieldset--contacts {
+.form-composition__fieldset-contacts {
   margin: 0;
   padding: 32px 20px 27px;
 }
@@ -57,7 +57,7 @@
 
 .form-radio,
 .form-checkbox,
-.form-composition__fieldset--contacts,
+.form-composition__fieldset-contacts,
 .form-composition__fieldset-wrapper {
   border: none;
 }
@@ -110,7 +110,7 @@
   padding-top: 52px;
 }
 
-.form-composition__fieldset--contacts {
+.form-composition__fieldset-contacts {
   padding: 0 20px;
 }
 
@@ -146,7 +146,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: @color-basic;
+  color: @color-basic
 }
 
 .form-composition__legend {
@@ -182,7 +182,7 @@
 
 }
 
-.fform-composition__fieldset-message {
+.form-composition__fieldset-message {
   margin-bottom: 14px;
 }
 
@@ -199,32 +199,3 @@
     color: @color-black-green;
   }
 }
-
-.form-composition__checkbox {
-  position: absolute;
-  content: "";
-  top: -4px;
-  left: 0;
-  margin-left: 0;
-  width: 35px;
-  height: 35px;
-  border: 2px solid @color-button-disabled;
-  border-radius: 1px;
-  background-color: @color-white;
-  outline: none;
-
-  &:hover {
-    border-color: @color-black-green;
-  }
-
-  &:active {
-    border-color: @color-hit;
-  }
-}
-
-.form-composition__input-text:checked + .form__checkbox {
-  background-image: url("../img/tick.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-

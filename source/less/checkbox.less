@@ -6,37 +6,6 @@
   flex-direction: column;
 }
 
-.checkbox__input + label {
-  position: relative;
-  display: inline-block;
-  padding-left: 60px;
-  align-self: center;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -4px;
-    left: 0;
-    width: 39px;
-    height: 39px;
-    background-color: @color-white;
-    border: 2px solid @color-button-disabled;
-    border-radius: 1px;
-  }
-}
-
-.checkbox__input:checked + label {
-  &::after {
-    position: absolute;
-    content: "";
-    top: 7px;
-    left: 9px;
-    width: 22px;
-    height: 16px;
-    background-image: url("../img/checkbox-tick.svg");
-    background-repeat: no-repeat;
-  }
-}
 
 .checkbox__input:hover + label,
 .checkbox__input:focus + label {

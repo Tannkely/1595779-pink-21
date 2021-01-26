@@ -1,35 +1,226 @@
-.main-nav {
-  position: relative;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
-  text-transform: uppercase;
-  text-align: center;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: @color-white;
+  box-shadow: 0 8px 0 0 @color-white, 0 16px 0 0 @color-white;
 }
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @color-hit;
+  box-shadow: 0 8px 0 0 @color-hit, 0 16px 0 0 @color-hit;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@color-hit, 30%);
+  box-shadow: 0 8px 0 0 fade(@color-hit, 30%), 0 16px 0 0 fade(@color-hit, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 50%;
+  right: 16%;
+  width: 25px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 25px;
+    height: 3px;
+    background-color: @color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @color-hit;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@color-hit, 30%);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__top-line {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+@media (max-width: @only-tablet-width) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    box-shadow: none;
+    border: none;
+  }
+
+  .main-nav__item a {
+    padding: 23px 0 12px;
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+}
+
+.main-nav__logo-img {
+  fill: @color-white;
+  color: @color-white;
+
+  &:hover {
+    fill: @color-hit;
+    color: @color-hit;
+  }
+
+  &:active {
+    fill: fade(@color-white, 30%);
+    color: fade(@color-white, 30%);
+  }
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    right: 3%;
+  }
+}
+
 
 .main-nav__list {
-  list-style: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  right: 0;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 32px;
-  text-transform: uppercase;
-  text-align: center;
+  list-style: none;
+  background-color: @color-black-green;
   z-index: 10;
-}
 
-.main-nav__list a {
-  text-decoration: none;
-  color: inherit;
+  @media (min-width: @desktop-width) {
+    position: initial;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 83px;
+    align-items: center;
+  }
 }
 
 .main-nav__item {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  list-style-type: none;
-  box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 @color-black;
+  box-shadow: @box-shadow;
+  border-top: 1px solid @color-black;
+
+  @media (min-width: @desktop-width) {
+    &--current a {
+      // border-bottom: 2px solid @color-white;
+      background: linear-gradient(@color-white, @color-white) no-repeat;
+      background-size: 100% 2px;
+      background-position: bottom;
+    }
+
+    &:last-child {
+      margin-right: 5px;
+    }
+  }
+}
+
+.main-nav__item a {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  color: @color-white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+
+  &:hover {
+    color: @color-hit;
+  }
+
+  &:active {
+    color: fade(@color-hit, 30%);
+  }
 }
 
 .main-nav__item:hover {
