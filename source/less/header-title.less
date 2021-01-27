@@ -1,0 +1,131 @@
+.header-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 79px;
+  margin-top: 29px;
+  color: @white;
+  font-size: 24px;
+  line-height: 32.68px;
+  text-align: center;
+  font-weight: 300;
+
+  @media @tablet {
+    margin-top: 69px;
+    margin-bottom: 126px;
+    font-size: 50px;
+    line-height: 68.09px;
+  }
+}
+
+.header-title--home {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 29px;
+  line-height: 28.8px;
+  z-index: 100;
+  position: relative;
+
+  .br-header--tablet {
+    display: none;
+  }
+
+  @media @tablet {
+    margin-top: 33px;
+    margin-bottom: 29px;
+    justify-content: flex-start;
+    max-width: 50%;
+    font-size: 40px;
+    line-height: 48px;
+
+    .br-header--tablet {
+      display: block;
+    }
+
+    p {
+      margin: 0;
+      width: 300px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  @media @desktop {
+    margin-bottom: 36px;
+    max-width: 45%;
+    font-size: 50px;
+    line-height: 68.09px;
+
+    p {
+      width: 300px;
+      font-size: 50px;
+      line-height: 68.09px;
+    }
+  }
+}
+
+.header-title--form {
+  padding-top: 35px;
+  padding-bottom: 44px;
+  z-index: 100;
+
+  @media @tablet {
+    padding-top: 69px;
+    padding-bottom: 60px;
+    font-size: 50px;
+    line-height: 68.09px;
+  }
+
+  @media @desktop {
+    padding-top: 58px;
+    padding-bottom: 90px;
+  }
+}
+
+.header-title--catalog {
+  margin: 0;
+  z-index: 100;
+
+  .br-head-catalog--desktop {
+    display: none;
+  }
+
+  @media @tablet {
+    padding-top: 36px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    line-height: 68.09px;
+  }
+
+  @media @desktop {
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 11px;
+    max-width: 70%;
+
+    .br-head-catalog--desktop {
+      display: block;
+    }
+  }
+}
+
+@media @desktop {
+  .br-1 {
+    display: none;
+  }
+}
+
+.header-title--home .header-title__slogan {
+  margin: 0 auto;
+  max-width: 95%;
+
+  @media @tablet {
+    max-width: 70%;
+    margin-left: 55px;
+  }
+
+  @media @desktop {
+    margin-left: 130px;
+  }
+}

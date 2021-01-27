@@ -1,0 +1,266 @@
+.filter {
+  @media @desktop {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: @mobile-width;
+    max-width: @desktop-width;
+  }
+}
+
+.filter__title {
+  margin-top: 0;
+  margin-bottom: 42px;
+  line-height: 30px;
+  text-align: center;
+
+  @media @tablet {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  @media @desktop {
+    margin-bottom: 68px;
+  }
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+.filter__wrapper {
+  background-color: @silver;
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+.filter__box {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.filter__list {
+  position: relative;
+  display: flex;
+  padding-bottom: 47px;
+  padding-left: 18px;
+  padding-right: 32px;
+  margin-top: 42px;
+  justify-content: space-between;
+}
+
+.filter__item {
+  flex-grow: 1;
+  display: flex;
+}
+
+.filter__item:first-child .filter__input-range {
+  z-index: 1;
+}
+
+.filter__item .filter__input-range:focus,
+.filter__item .filter__input-range:active {
+  z-index: 2;
+}
+
+.filter__buttons {
+  position: relative;
+  margin-top: 13px;
+  padding-top: 40px;
+}
+
+.filter__buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  height: 1px;
+  background-color: fade(@blue, 10%);
+}
+
+.filter__button {
+  width: 100%;
+}
+
+.filter__button ~ .filter__button {
+  margin-top: 13px;
+}
+
+.filter__label-range {
+  display: flex;
+  margin: auto;
+}
+
+.filter__label-range svg {
+  margin: auto;
+  display: block;
+  fill: fade(@blue, 30%);
+}
+
+.filter__label-file {
+  display: block;
+}
+
+.filter__label-file img {
+  display: block;
+  margin: 0 auto;
+  height: 374px;
+  object-fit: cover;
+}
+
+@media @tablet {
+  .filter__wrapper {
+    padding-top: 57px;
+    padding-bottom: 55px;
+    // margin-bottom: 17px;
+  }
+
+  .filter__form {
+    display: flex;
+  }
+
+  .filter__left {
+    flex-basis: 280px;
+  }
+
+  .filter__right {
+    flex-grow: 1;
+    padding-left: 47px;
+    padding-right: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter__box:last-child {
+    margin-top: auto;
+  }
+
+  .filter__list {
+    display: block;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .filter__item {
+    position: relative;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    padding-bottom: 15px;
+  }
+
+  .filter__item::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 1px;
+    background-color: fade(@blue, 10%);
+  }
+
+  .filter__item ~ .filter__item {
+    margin-top: 17px;
+  }
+
+  .filter__input-range {
+    position: relative;
+    margin-left: 30px;
+    left: auto;
+    width: 100%;
+  }
+
+  .filter__label-range {
+    flex-shrink: 0;
+  }
+
+  .filter__label-file img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .filter__buttons {
+    margin-top: 0;
+    width: 101%;
+    // margin-left: 5px;
+  }
+
+  .filter__buttons::before {
+    display: none;
+  }
+
+  .filter__button ~ .filter__button {
+    margin-top: 26.5px;
+  }
+
+  .filter__crop {
+    width: 24px;
+    height: 22px;
+  }
+
+  .filter__fill {
+    width: 24px;
+  }
+
+  .filter__contrast {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+@media @desktop {
+  .filter__right {
+    padding-left: 89px;
+  }
+
+  .filter__input-range {
+    margin-left: 45px;
+    margin-right: 30px;
+  }
+
+  .filter__item::before {
+    right: 0;
+  }
+
+  .filter__item:last-child::before {
+    display: none;
+  }
+
+  .filter__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 45px;
+  }
+
+  .filter__button,
+  .filter__button ~ .filter__button {
+    margin: 0;
+  }
+
+  .filter__crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .filter__fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter__contrast {
+    width: 44px;
+    height: 32px;
+  }
+
+  .filter__wrapper {
+    padding: 57px 40px 57px 80px;
+    margin-bottom: 28px;
+  }
+}

@@ -1,0 +1,94 @@
+.news {
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
+
+  @media @desktop {
+    background-color: @silver;
+  }
+}
+
+.news__wrappers {
+  display: none;
+  margin: 0 auto;
+  padding: 60px 20px 72px;
+
+  @media @tablet {
+    display: flex;
+    justify-content: flex-end;
+    padding: 62px 20px 72px;
+  }
+
+  @media @desktop {
+    padding: 20px 10px 111px;
+    width: 940px;
+  }
+}
+
+.news__study {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+  position: relative;
+  margin-top: 11px;
+
+  @media @desktop {
+    margin-top: 65px;
+    width: 570px;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    right: 123.3%;
+    top: -8.5%;
+    content: "";
+    width: 238px;
+    height: 276px;
+    background: url("../img/logo-timer.svg") no-repeat center;
+    background-size: contain;
+
+    @media @desktop {
+      top: -29%;
+      right: 112.5%;
+      width: 298px;
+      height: 345px;
+    }
+  }
+}
+
+.news__title {
+  margin-top: 23px;
+  margin-bottom: 0;
+  width: 200px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+
+  @media @desktop {
+    margin-top: 24px;
+    margin-bottom: 22px;
+    width: auto;
+  }
+}
+
+.news__text {
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-bottom: 9px;
+
+  @media @desktop {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.news__more {
+  color: @pink;
+}
