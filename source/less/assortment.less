@@ -1,0 +1,266 @@
+.assortment {
+  @media @desktop {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: @mobile-width;
+    max-width: @desktop-width;
+  }
+}
+
+.assortment__title {
+  margin-top: 0;
+  margin-bottom: 42px;
+  line-height: 30px;
+  text-align: center;
+
+  @media @tablet {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  @media @desktop {
+    margin-bottom: 68px;
+  }
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+.assortment__wrapper {
+  background-color: @silver;
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+.assortment__box {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.assortment__list {
+  position: relative;
+  display: flex;
+  padding-bottom: 47px;
+  padding-left: 18px;
+  padding-right: 32px;
+  margin-top: 42px;
+  justify-content: space-between;
+}
+
+.assortment__item {
+  flex-grow: 1;
+  display: flex;
+}
+
+.assortment__item:first-child .assortment__input-range {
+  z-index: 1;
+}
+
+.assortment__item .assortment__input-range:focus,
+.assortment__item .assortment__input-range:active {
+  z-index: 2;
+}
+
+.assortment__buttons {
+  position: relative;
+  margin-top: 13px;
+  padding-top: 40px;
+}
+
+.assortment__buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  height: 1px;
+  background-color: fade(@blue, 10%);
+}
+
+.assortment__button {
+  width: 100%;
+}
+
+.assortment__button ~ .assortment__button {
+  margin-top: 13px;
+}
+
+.assortment__label-range {
+  display: flex;
+  margin: auto;
+}
+
+.assortment__label-range svg {
+  margin: auto;
+  display: block;
+  fill: fade(@blue, 30%);
+}
+
+.assortment__label-file {
+  display: block;
+}
+
+.assortment__label-file img {
+  display: block;
+  margin: 0 auto;
+  height: 374px;
+  object-fit: cover;
+}
+
+@media @tablet {
+  .assortment__wrapper {
+    padding-top: 57px;
+    padding-bottom: 55px;
+    // margin-bottom: 17px;
+  }
+
+  .assortment__form {
+    display: flex;
+  }
+
+  .assortment__left {
+    flex-basis: 280px;
+  }
+
+  .assortment__right {
+    flex-grow: 1;
+    padding-left: 47px;
+    padding-right: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .assortment__box:last-child {
+    margin-top: auto;
+  }
+
+  .assortment__list {
+    display: block;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .assortment__item {
+    position: relative;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    padding-bottom: 15px;
+  }
+
+  .assortment__item::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 1px;
+    background-color: fade(@blue, 10%);
+  }
+
+  .assortment__item ~ .assortment__item {
+    margin-top: 17px;
+  }
+
+  .assortment__input-range {
+    position: relative;
+    margin-left: 30px;
+    left: auto;
+    width: 100%;
+  }
+
+  .assortment__label-range {
+    flex-shrink: 0;
+  }
+
+  .assortment__label-file img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .assortment__buttons {
+    margin-top: 0;
+    width: 101%;
+    // margin-left: 5px;
+  }
+
+  .assortment__buttons::before {
+    display: none;
+  }
+
+  .assortment__button ~ .assortment__button {
+    margin-top: 26.5px;
+  }
+
+  .assortment__crop {
+    width: 24px;
+    height: 22px;
+  }
+
+  .assortment__fill {
+    width: 24px;
+  }
+
+  .assortment__contrast {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+@media @desktop {
+  .assortment__right {
+    padding-left: 89px;
+  }
+
+  .assortment__input-range {
+    margin-left: 45px;
+    margin-right: 30px;
+  }
+
+  .assortment__item::before {
+    right: 0;
+  }
+
+  .assortment__item:last-child::before {
+    display: none;
+  }
+
+  .assortment__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 45px;
+  }
+
+  .assortment__button,
+  .assortment__button ~ .assortment__button {
+    margin: 0;
+  }
+
+  .assortment__crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .assortment__fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .assortment__contrast {
+    width: 44px;
+    height: 32px;
+  }
+
+  .assortment__wrapper {
+    padding: 57px 40px 57px 80px;
+    margin-bottom: 28px;
+  }
+}

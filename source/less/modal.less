@@ -1,29 +1,114 @@
 .modal {
-  z-index: 100;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background: @color-white;
-  box-shadow: 0 7px 15px @shadow;
-  border-radius: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: @white;
+  text-align: center;
+
+  &--win {
+    display: none;
+
+    @media @tablet {
+      width: 460px;
+    }
+
+    @media @desktop {
+      width: 780px;
+    }
+  }
+
+  &--fail {
+    display: none;
+
+    @media @tablet {
+      width: 460px;
+    }
+  }
+}
+
+.modal__box {
+  padding: 23px 20px 24px 20px;
+
+  @media @tablet {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media @desktop {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  &--fail {
+    padding-top: 19px;
+    padding-bottom: 16px;
+
+    @media @desktop {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
 }
 
 .modal__title {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
-  color: @color-black;
-  text-align: center;
+  color: @black;
+
+  @media @tablet {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
-.modal__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: @color-black-green;
-  text-align: center;
+.modal__text {
+  @media @tablet {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  &--win {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
 
+.modal__button-box {
+  padding: 48px 20px 52px 20px;
+
+  @media @tablet {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media @desktop {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  &--win {
+    background-color: @silver;
+  }
+
+  &--fail {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: @white;
+
+    @media @tablet {
+      padding-top: 15px;
+      padding-bottom: 52px;
+    }
+
+    @media @desktop {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}

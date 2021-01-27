@@ -2,7 +2,7 @@
   display: none;
   justify-content: space-between;
 
-  @media @desktop-width {
+  @media @desktop {
     display: flex;
   }
 }
@@ -28,18 +28,18 @@
     height: 27px;
     border-bottom: none;
     border-left: none;
-    border-top: 2px solid fade(@color-darkblue, 30%);
-    border-right: 2px solid fade(@color-darkblue, 30%);
+    border-top: 2px solid fade(@bg-color-header, 30%);
+    border-right: 2px solid fade(@bg-color-header, 30%);
   }
 
   &:hover::before {
-    border-top-color: fade(@color-darkblue, 60%);
-    border-right-color: fade(@color-darkblue, 60%);
+    border-top-color: fade(@bg-color-header, 60%);
+    border-right-color: fade(@bg-color-header, 60%);
   }
 
   &:active::before {
-    border-top-color: fade(@color-darkblue, 10%);
-    border-right-color: fade(@color-darkblue, 10%);
+    border-top-color: fade(@bg-color-header, 10%);
+    border-right-color: fade(@bg-color-header, 10%);
   }
 
   &--prev::before {

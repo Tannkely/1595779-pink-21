@@ -1,12 +1,12 @@
 .news {
   display: none;
 
-  @media @tablet-width {
+  @media @tablet {
     display: block;
   }
 
-  @media @desktop-width {
-    background-color: @color-grey;
+  @media @desktop {
+    background-color: @silver;
   }
 }
 
@@ -15,13 +15,13 @@
   margin: 0 auto;
   padding: 60px 20px 72px;
 
-  @media @tablet-width {
+  @media @tablet {
     display: flex;
     justify-content: flex-end;
     padding: 62px 20px 72px;
   }
 
-  @media @desktop-width {
+  @media @desktop {
     padding: 20px 10px 111px;
     width: 940px;
   }
@@ -35,7 +35,7 @@
   position: relative;
   margin-top: 11px;
 
-  @media @desktop-width {
+  @media @desktop {
     margin-top: 65px;
     width: 570px;
     font-size: 18px;
@@ -53,7 +53,7 @@
     background: url("../img/logo-timer.svg") no-repeat center;
     background-size: contain;
 
-    @media @desktop-width {
+    @media @desktop {
       top: -29%;
       right: 112.5%;
       width: 298px;
@@ -69,9 +69,9 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  color: @color-black;
+  color: @black;
 
-  @media @desktop-width {
+  @media @desktop {
     margin-top: 24px;
     margin-bottom: 22px;
     width: auto;
@@ -83,13 +83,12 @@
   margin-top: 10px;
   margin-bottom: 9px;
 
-  @media @desktop-width {
+  @media @desktop {
     margin-top: 0;
     margin-bottom: 32px;
   }
 }
 
 .news__more {
-  color: @color-hit;
+  color: @pink;
 }
-

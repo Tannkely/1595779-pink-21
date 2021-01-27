@@ -1,39 +1,94 @@
-.profit_title {
-  text-align: center;
+.profit__title {
+  margin: 0 auto;
+  padding: 41px 20px 32px;
+  max-width: 940px;
+
+  @media @tablet {
+    padding: 49px 20px 48px;
+  }
+
+  @media @desktop {
+    padding: 67px 10px 76px;
+  }
 }
 
-.profit {
-  background-size: 157px 320px, 100% 100%;
-  background-position: 550px 555px, 0 100px;
-}
-
-.profit__item {
-  list-style-type: none;
-}
-
-.profit__header,
-.profit__text {
-  font-weight: 300;
+.profit__header {
+  margin: 0 auto;
+  margin-bottom: 31px;
   font-size: 24px;
-  line-height: 120%;
+  font-weight: 300;
+  line-height: 28px;
   text-align: center;
-  margin-top: 46px;
+
+  @media @tablet {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media @desktop {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
-.profit__subheader {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  padding-bottom: 24px;
-  margin: 0;
+.profit--catalog .profit__title {
   padding-top: 43px;
-  text-align: center;
+  padding-bottom: 35px;
+
+  @media @tablet {
+    padding-top: 92px;
+    padding-bottom: 39px;
+  }
+
+  @media @desktop {
+    padding-top: 91px;
+    padding-bottom: 50px;
+  }
+
+  .profit__header {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 500px;
+
+    @media @tablet {
+      font-size: 18px;
+    }
+
+    @media @desktop {
+      max-width: 800px;
+    }
+  }
 }
 
-.profit__description {
+.profit--form .profit__header {
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-  text-align: center;
+  line-height: 30px;
+
+  @media @tablet {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  @media @tablet {
+    font-size: 18px;
+    max-width: 85%;
+  }
+}
+
+.profit--form .profit__title {
+  padding-top: 44px;
+  padding-bottom: 34px;
+
+  @media @tablet {
+    padding-top: 92px;
+    padding-bottom: 39px;
+  }
+
+  @media @desktop {
+    padding-bottom: 50px;
+  }
 }
