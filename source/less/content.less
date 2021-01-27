@@ -131,7 +131,21 @@
   }
 }
 
-.photo__image {
+.content__full {
+  width: 100%;
+  object-fit: cover;
+  min-height: 137px;
+
+  @media (min-width: @tablet) {
+    height: 509px;
+  }
+
+  @media (min-width: @desktop) {
+    height: 506px;
+  }
+}
+
+.content__image {
   display: block;
   max-width: 100%;
   height: auto;
